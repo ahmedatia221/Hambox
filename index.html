@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الألعاب والاشتراكات - الأفضل للألعاب الرقمية</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://via.placeholder.com/32x32" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="https://via.placeholder.com/50x50?text=Logo" alt="لوجو المتجر">
+                <h2>AtiaShop</h2>
+            </a>
+            <nav class="nav-links">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li class="dropdown">
+                        <a href="#categories" class="dropbtn">الفئات <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#playstation-games">ألعاب بلايستيشن</a>
+                            <a href="#xbox-games">ألعاب Xbox</a>
+                            <a href="#pc-games">ألعاب PC</a>
+                            <a href="#digital-cards">بطاقات رقمية</a>
+                            <a href="#ps-subscriptions">اشتراكات بلايستيشن</a>
+                            <a href="#xbox-subscriptions">اشتراكات Xbox</a>
+                        </div>
+                    </li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#how-it-works">كيف تعمل</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="#" id="cartIconLink">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>عالم الألعاب بين يديك</h1>
+            <p>اكتشف أحدث الألعاب والاشتراكات بأفضل الأسعار!</p>
+            <a href="#products" class="btn-primary">استكشف المنتجات</a>
+        </div>
+    </section>
+
+    <section id="categories" class="categories-section section-padding">
+        <div class="container">
+            <h2>تصفح حسب الفئة</h2>
+            <div class="categories-grid-new">
+                <a href="#playstation-games" class="category-card-new">
+                    <img src="https://play4.uk/wp-content/uploads/2021/05/playstation_white_logo_blue_background_1.jpg" alt="ألعاب بلايستيشن">
+                    <h3>ألعاب بلايستيشن</h3>
+                </a>
+                <a href="#xbox-games" class="category-card-new">
+                    <img src="https://gamingbolt.com/wp-content/uploads/2023/08/xbox-logo-1024x576.jpg" alt="ألعاب Xbox">
+                    <h3>ألعاب Xbox</h3>
+                </a>
+                <a href="#pc-games" class="category-card-new">
+                    <img src="https://i.postimg.cc/ZYB2nLK8/unnamed-3.png" alt="ألعاب PC">
+                    <h3>ألعاب PC</h3>
+                </a>
+                <a href="#digital-cards" class="category-card-new">
+                    <img src="https://i.ytimg.com/vi/uam0gIkNl3A/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGCcgZChyMA8=&rs=AOn4CLCIFP3fQwGl7y5czdFzw8cqHjsOAg" alt="بطاقات رقمية">
+                    <h3>بطاقات رقمية</h3>
+                </a>
+                <a href="#ps-subscriptions" class="category-card-new">
+                    <img src="https://th.bing.com/th/id/R.9a9a6db431bc5a0da96deca68b00b675?rik=NCdc4gUcemOPHA&pid=ImgRaw&r=0" alt="اشتراكات بلايستيشن">
+                    <h3>اشتراكات بلايستيشن</h3>
+                </a>
+                <a href="#xbox-subscriptions" class="category-card-new">
+                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/07/xbox-game-pass-cloud-family-plan-tier-changes-report.jpg" alt="اشتراكات Xbox">
+                    <h3>اشتراكات Xbox</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products-section section-padding">
+        <div class="container">
+            <h2>منتجاتنا المميزة</h2>
+
+            <div class="product-category-section" id="playstation-games">
+                <h3>ألعاب بلايستيشن</h3>
+                <div class="products-grid">
+                    <div class="product-card game-card" data-product-id="ps-game-001" data-product-name="Elden Ring" data-product-type="game">
+                        <img src="https://th.bing.com/th/id/OIP.Rjn-15ym_UPBBQ787rYgFwHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Elden Ring">
+                        <h3>Elden Ring</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-001" value="180.00" data-price-label="نسخة ساين" checked> نسخة ساين: 180.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-001" value="280.00" data-price-label="نسخة هوم"> نسخة هوم: 280.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-001" value="450.00" data-price-label="فل اكونت"> فل اكونت: 450.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="ps-game-002" data-product-name="God of War Ragnarok" data-product-type="game">
+                        <img src="https://th.bing.com/th/id/OIP.4LcvYzHaWES8QXxMJKC6SAHaEK?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="God of War Ragnarok">
+                        <h3>God of War Ragnarok</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-002" value="170.00" data-price-label="نسخة ساين" checked> نسخة ساين: 170.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-002" value="270.00" data-price-label="نسخة هوم"> نسخة هوم: 270.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-002" value="420.00" data-price-label="فل اكونت"> فل اكونت: 420.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="ps-game-003" data-product-name="Spider-Man Miles Morales" data-product-type="game">
+                        <img src="https://th.bing.com/th/id/OIP.GRLHGDo76CYHybaS7scc1AHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Spider-Man Miles Morales">
+                        <h3>Spider-Man Miles Morales</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-003" value="100.00" data-price-label="نسخة ساين" checked> نسخة ساين: 100.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-003" value="180.00" data-price-label="نسخة هوم"> نسخة هوم: 180.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-003" value="300.00" data-price-label="فل اكونت"> فل اكونت: 300.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-004" data-product-name="لعبة بلايستيشن 004" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-4" alt="لعبة بلايستيشن 004">
+                        <h3>لعبة بلايستيشن 004</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-004" value="150.00" data-price-label="نسخة ساين" checked> نسخة ساين: 150.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-004" value="250.00" data-price-label="نسخة هوم"> نسخة هوم: 250.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-004" value="400.00" data-price-label="فل اكونت"> فل اكونت: 400.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-005" data-product-name="لعبة بلايستيشن 005" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-5" alt="لعبة بلايستيشن 005">
+                        <h3>لعبة بلايستيشن 005</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-005" value="160.00" data-price-label="نسخة ساين" checked> نسخة ساين: 160.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-005" value="260.00" data-price-label="نسخة هوم"> نسخة هوم: 260.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-005" value="410.00" data-price-label="فل اكونت"> فل اكونت: 410.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-006" data-product-name="لعبة بلايستيشن 006" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-6" alt="لعبة بلايستيشن 006">
+                        <h3>لعبة بلايستيشن 006</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-006" value="155.00" data-price-label="نسخة ساين" checked> نسخة ساين: 155.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-006" value="255.00" data-price-label="نسخة هوم"> نسخة هوم: 255.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-006" value="405.00" data-price-label="فل اكونت"> فل اكونت: 405.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-007" data-product-name="لعبة بلايستيشن 007" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-7" alt="لعبة بلايستيشن 007">
+                        <h3>لعبة بلايستيشن 007</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-007" value="140.00" data-price-label="نسخة ساين" checked> نسخة ساين: 140.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-007" value="230.00" data-price-label="نسخة هوم"> نسخة هوم: 230.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-007" value="380.00" data-price-label="فل اكونت"> فل اكونت: 380.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-008" data-product-name="لعبة بلايستيشن 008" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-8" alt="لعبة بلايستيشن 008">
+                        <h3>لعبة بلايستيشن 008</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-008" value="165.00" data-price-label="نسخة ساين" checked> نسخة ساين: 165.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-008" value="265.00" data-price-label="نسخة هوم"> نسخة هوم: 265.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-008" value="415.00" data-price-label="فل اكونت"> فل اكونت: 415.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-009" data-product-name="لعبة بلايستيشن 009" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-9" alt="لعبة بلايستيشن 009">
+                        <h3>لعبة بلايستيشن 009</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-009" value="130.00" data-price-label="نسخة ساين" checked> نسخة ساين: 130.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-009" value="220.00" data-price-label="نسخة هوم"> نسخة هوم: 220.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-009" value="370.00" data-price-label="فل اكونت"> فل اكونت: 370.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-010" data-product-name="لعبة بلايستيشن 010" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-10" alt="لعبة بلايستيشن 010">
+                        <h3>لعبة بلايستيشن 010</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-010" value="190.00" data-price-label="نسخة ساين" checked> نسخة ساين: 190.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-010" value="290.00" data-price-label="نسخة هوم"> نسخة هوم: 290.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-010" value="460.00" data-price-label="فل اكونت"> فل اكونت: 460.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-011" data-product-name="لعبة بلايستيشن 011" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-11" alt="لعبة بلايستيشن 011">
+                        <h3>لعبة بلايستيشن 011</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-011" value="175.00" data-price-label="نسخة ساين" checked> نسخة ساين: 175.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-011" value="275.00" data-price-label="نسخة هوم"> نسخة هوم: 275.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-011" value="430.00" data-price-label="فل اكونت"> فل اكونت: 430.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-game-012" data-product-name="لعبة بلايستيشن 012" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?ps-game-12" alt="لعبة بلايستيشن 012">
+                        <h3>لعبة بلايستيشن 012</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-game-012" value="145.00" data-price-label="نسخة ساين" checked> نسخة ساين: 145.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-012" value="235.00" data-price-label="نسخة هوم"> نسخة هوم: 235.00 ريال</label>
+                            <label><input type="radio" name="price-ps-game-012" value="385.00" data-price-label="فل اكونت"> فل اكونت: 385.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: PlayStation Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    
+                </div>
+                <div class="more-products-container">
+                    <button class="btn-secondary see-more-btn" data-target-category="playstation-games">شاهد المزيد من ألعاب بلايستيشن</button>
+                    <button class="btn-secondary see-less-btn" data-target-category="playstation-games" style="display: none;">عرض أقل</button>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="product-category-section" id="xbox-games">
+                <h3>ألعاب Xbox</h3>
+                <div class="products-grid">
+                    <div class="product-card game-card" data-product-id="xbox-game-001" data-product-name="Halo Infinite" data-product-type="game">
+                        <img src="https://th.bing.com/th/id/OIP.Frb3WiP7qLCpDZvfIY21ewAAAA?w=414&h=232&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Halo Infinite">
+                        <h3>Halo Infinite</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-001" value="150.00" data-price-label="نسخة ساين" checked> نسخة ساين: 150.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-001" value="220.00" data-price-label="نسخة هوم"> نسخة هوم: 220.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-001" value="380.00" data-price-label="فل اكونت"> فل اكونت: 380.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="xbox-game-002" data-product-name="Forza Horizon 5" data-product-type="game">
+                        <img src="https://th.bing.com/th/id/OIP.MabtqUKiFaJeo_9eYVEAVAHaEK?o=7rm=3&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Forza Horizon 5">
+                        <h3>Forza Horizon 5</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-002" value="140.00" data-price-label="نسخة ساين" checked> نسخة ساين: 140.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-002" value="210.00" data-price-label="نسخة هوم"> نسخة هوم: 210.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-002" value="360.00" data-price-label="فل اكونت"> فل اكونت: 360.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="xbox-game-003" data-product-name="Starfield" data-product-type="game">
+                        <img src="https://th.bing.com/th/id/OIP.mO4LVxjK3byqGtZy_46_-AHaEK?w=1280&h=720&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Starfield">
+                        <h3>Starfield</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-003" value="160.00" data-price-label="نسخة ساين" checked> نسخة ساين: 160.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-003" value="250.00" data-price-label="نسخة هوم"> نسخة هوم: 250.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-003" value="400.00" data-price-label="فل اكونت"> فل اكونت: 400.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-004" data-product-name="لعبة Xbox 004" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-4" alt="لعبة Xbox 004">
+                        <h3>لعبة Xbox 004</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-004" value="140.00" data-price-label="نسخة ساين" checked> نسخة ساين: 140.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-004" value="230.00" data-price-label="نسخة هوم"> نسخة هوم: 230.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-004" value="390.00" data-price-label="فل اكونت"> فل اكونت: 390.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-005" data-product-name="لعبة Xbox 005" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-5" alt="لعبة Xbox 005">
+                        <h3>لعبة Xbox 005</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-005" value="150.00" data-price-label="نسخة ساين" checked> نسخة ساين: 150.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-005" value="240.00" data-price-label="نسخة هوم"> نسخة هوم: 240.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-005" value="400.00" data-price-label="فل اكونت"> فل اكونت: 400.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-006" data-product-name="لعبة Xbox 006" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-6" alt="لعبة Xbox 006">
+                        <h3>لعبة Xbox 006</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-006" value="160.00" data-price-label="نسخة ساين" checked> نسخة ساين: 160.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-006" value="250.00" data-price-label="نسخة هوم"> نسخة هوم: 250.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-006" value="410.00" data-price-label="فل اكونت"> فل اكونت: 410.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-007" data-product-name="لعبة Xbox 007" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-7" alt="لعبة Xbox 007">
+                        <h3>لعبة Xbox 007</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-007" value="130.00" data-price-label="نسخة ساين" checked> نسخة ساين: 130.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-007" value="200.00" data-price-label="نسخة هوم"> نسخة هوم: 200.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-007" value="350.00" data-price-label="فل اكونت"> فل اكونت: 350.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-008" data-product-name="لعبة Xbox 008" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-8" alt="لعبة Xbox 008">
+                        <h3>لعبة Xbox 008</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-008" value="170.00" data-price-label="نسخة ساين" checked> نسخة ساين: 170.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-008" value="260.00" data-price-label="نسخة هوم"> نسخة هوم: 260.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-008" value="420.00" data-price-label="فل اكونت"> فل اكونت: 420.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-009" data-product-name="لعبة Xbox 009" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-9" alt="لعبة Xbox 009">
+                        <h3>لعبة Xbox 009</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-009" value="145.00" data-price-label="نسخة ساين" checked> نسخة ساين: 145.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-009" value="235.00" data-price-label="نسخة هوم"> نسخة هوم: 235.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-009" value="395.00" data-price-label="فل اكونت"> فل اكونت: 395.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-010" data-product-name="لعبة Xbox 010" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-10" alt="لعبة Xbox 010">
+                        <h3>لعبة Xbox 010</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-010" value="180.00" data-price-label="نسخة ساين" checked> نسخة ساين: 180.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-010" value="270.00" data-price-label="نسخة هوم"> نسخة هوم: 270.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-010" value="430.00" data-price-label="فل اكونت"> فل اكونت: 430.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-011" data-product-name="لعبة Xbox 011" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-11" alt="لعبة Xbox 011">
+                        <h3>لعبة Xbox 011</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-011" value="155.00" data-price-label="نسخة ساين" checked> نسخة ساين: 155.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-011" value="245.00" data-price-label="نسخة هوم"> نسخة هوم: 245.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-011" value="405.00" data-price-label="فل اكونت"> فل اكونت: 405.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-game-012" data-product-name="لعبة Xbox 012" data-product-type="game">
+                        <img src="https://source.unsplash.com/300x300/?xbox-game-12" alt="لعبة Xbox 012">
+                        <h3>لعبة Xbox 012</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-game-012" value="165.00" data-price-label="نسخة ساين" checked> نسخة ساين: 165.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-012" value="255.00" data-price-label="نسخة هوم"> نسخة هوم: 255.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-game-012" value="415.00" data-price-label="فل اكونت"> فل اكونت: 415.00 ريال</label>
+                        </div>
+                        <div class="platform-info"><p>المنصة: Xbox Store</p></div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    
+                </div>
+                <div class="more-products-container">
+                    <button class="btn-secondary see-more-btn" data-target-category="xbox-games">شاهد المزيد من ألعاب Xbox</button>
+                    <button class="btn-secondary see-less-btn" data-target-category="xbox-games" style="display: none;">عرض أقل</button>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="product-category-section" id="pc-games">
+                <h3>ألعاب PC</h3>
+                <div class="products-grid">
+                    <div class="product-card game-card" data-product-id="pc-game-001" data-product-name="Cyberpunk 2077" data-product-type="game" data-product-price="199.00">
+                        <img src="https://th.bing.com/th/id/OIP.NZ53080KQK6_O7wTDRTFxwHaEK?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Cyberpunk 2077">
+                        <h3>Cyberpunk 2077</h3>
+                        <div class="price-info"><p>السعر: 199.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Steam</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="pc-game-002" data-product-name="The Witcher 3" data-product-type="game" data-product-price="120.00">
+                        <img src="https://th.bing.com/th/id/OIP.lD7P9BJdBJf72Lg3dzJulQHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="The Witcher 3">
+                        <h3>The Witcher 3</h3>
+                        <div class="price-info"><p>السعر: 120.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: GOG</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="pc-game-003" data-product-name="Red Dead Redemption 2" data-product-type="game" data-product-price="250.00">
+                        <img src="https://th.bing.com/th/id/OIP.ecoMHvpEDcaJGEHooAQE4QHaEK?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Red Dead Redemption 2">
+                        <h3>Red Dead Redemption 2</h3>
+                        <div class="price-info"><p>السعر: 250.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Rockstar Games Launcher</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-004" data-product-name="لعبة PC 004" data-product-type="game" data-product-price="120.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-4" alt="لعبة PC 004">
+                        <h3>لعبة PC 004</h3>
+                        <div class="price-info"><p>السعر: 120.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Epic Games</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-005" data-product-name="لعبة PC 005" data-product-type="game" data-product-price="130.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-5" alt="لعبة PC 005">
+                        <h3>لعبة PC 005</h3>
+                        <div class="price-info"><p>السعر: 130.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Steam</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-006" data-product-name="لعبة PC 006" data-product-type="game" data-product-price="140.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-6" alt="لعبة PC 006">
+                        <h3>لعبة PC 006</h3>
+                        <div class="price-info"><p>السعر: 140.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Origin</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-007" data-product-name="لعبة PC 007" data-product-type="game" data-product-price="150.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-7" alt="لعبة PC 007">
+                        <h3>لعبة PC 007</h3>
+                        <div class="price-info"><p>السعر: 150.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Steam</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-008" data-product-name="لعبة PC 008" data-product-type="game" data-product-price="160.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-8" alt="لعبة PC 008">
+                        <h3>لعبة PC 008</h3>
+                        <div class="price-info"><p>السعر: 160.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: GOG</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-009" data-product-name="لعبة PC 009" data-product-type="game" data-product-price="170.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-9" alt="لعبة PC 009">
+                        <h3>لعبة PC 009</h3>
+                        <div class="price-info"><p>السعر: 170.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Rockstar Games Launcher</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-010" data-product-name="لعبة PC 010" data-product-type="game" data-product-price="180.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-10" alt="لعبة PC 010">
+                        <h3>لعبة PC 010</h3>
+                        <div class="price-info"><p>السعر: 180.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Epic Games</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-011" data-product-name="لعبة PC 011" data-product-type="game" data-product-price="190.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-11" alt="لعبة PC 011">
+                        <h3>لعبة PC 011</h3>
+                        <div class="price-info"><p>السعر: 190.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Steam</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-012" data-product-name="لعبة PC 012" data-product-type="game" data-product-price="200.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-12" alt="لعبة PC 012">
+                        <h3>لعبة PC 012</h3>
+                        <div class="price-info"><p>السعر: 200.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: GOG</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-013" data-product-name="لعبة PC 013" data-product-type="game" data-product-price="210.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-13" alt="لعبة PC 013">
+                        <h3>لعبة PC 013</h3>
+                        <div class="price-info"><p>السعر: 210.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Rockstar Games Launcher</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-014" data-product-name="لعبة PC 014" data-product-type="game" data-product-price="220.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-14" alt="لعبة PC 014">
+                        <h3>لعبة PC 014</h3>
+                        <div class="price-info"><p>السعر: 220.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Epic Games</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-015" data-product-name="لعبة PC 015" data-product-type="game" data-product-price="230.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-15" alt="لعبة PC 015">
+                        <h3>لعبة PC 015</h3>
+                        <div class="price-info"><p>السعر: 230.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Steam</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-016" data-product-name="لعبة PC 016" data-product-type="game" data-product-price="240.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-16" alt="لعبة PC 016">
+                        <h3>لعبة PC 016</h3>
+                        <div class="price-info"><p>السعر: 240.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: GOG</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-017" data-product-name="لعبة PC 017" data-product-type="game" data-product-price="250.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-17" alt="لعبة PC 017">
+                        <h3>لعبة PC 017</h3>
+                        <div class="price-info"><p>السعر: 250.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Rockstar Games Launcher</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-018" data-product-name="لعبة PC 018" data-product-type="game" data-product-price="260.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-18" alt="لعبة PC 018">
+                        <h3>لعبة PC 018</h3>
+                        <div class="price-info"><p>السعر: 260.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Epic Games</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-019" data-product-name="لعبة PC 019" data-product-type="game" data-product-price="270.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-19" alt="لعبة PC 019">
+                        <h3>لعبة PC 019</h3>
+                        <div class="price-info"><p>السعر: 270.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Steam</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-020" data-product-name="لعبة PC 020" data-product-type="game" data-product-price="280.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-20" alt="لعبة PC 020">
+                        <h3>لعبة PC 020</h3>
+                        <div class="price-info"><p>السعر: 280.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: GOG</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-021" data-product-name="لعبة PC 021" data-product-type="game" data-product-price="290.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-21" alt="لعبة PC 021">
+                        <h3>لعبة PC 021</h3>
+                        <div class="price-info"><p>السعر: 290.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Rockstar Games Launcher</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-022" data-product-name="لعبة PC 022" data-product-type="game" data-product-price="300.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-22" alt="لعبة PC 022">
+                        <h3>لعبة PC 022</h3>
+                        <div class="price-info"><p>السعر: 300.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Epic Games</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-023" data-product-name="لعبة PC 023" data-product-type="game" data-product-price="310.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-23" alt="لعبة PC 023">
+                        <h3>لعبة PC 023</h3>
+                        <div class="price-info"><p>السعر: 310.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Steam</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-024" data-product-name="لعبة PC 024" data-product-type="game" data-product-price="320.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-24" alt="لعبة PC 024">
+                        <h3>لعبة PC 024</h3>
+                        <div class="price-info"><p>السعر: 320.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: GOG</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-025" data-product-name="لعبة PC 025" data-product-type="game" data-product-price="330.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-25" alt="لعبة PC 025">
+                        <h3>لعبة PC 025</h3>
+                        <div class="price-info"><p>السعر: 330.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Rockstar Games Launcher</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-026" data-product-name="لعبة PC 026" data-product-type="game" data-product-price="340.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-26" alt="لعبة PC 026">
+                        <h3>لعبة PC 026</h3>
+                        <div class="price-info"><p>السعر: 340.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Epic Games</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-027" data-product-name="لعبة PC 027" data-product-type="game" data-product-price="350.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-27" alt="لعبة PC 027">
+                        <h3>لعبة PC 027</h3>
+                        <div class="price-info"><p>السعر: 350.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Steam</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-028" data-product-name="لعبة PC 028" data-product-type="game" data-product-price="360.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-28" alt="لعبة PC 028">
+                        <h3>لعبة PC 028</h3>
+                        <div class="price-info"><p>السعر: 360.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: GOG</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-029" data-product-name="لعبة PC 029" data-product-type="game" data-product-price="370.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-29" alt="لعبة PC 029">
+                        <h3>لعبة PC 029</h3>
+                        <div class="price-info"><p>السعر: 370.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Rockstar Games Launcher</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="pc-game-030" data-product-name="لعبة PC 030" data-product-type="game" data-product-price="380.00">
+                        <img src="https://source.unsplash.com/300x300/?pc-game-30" alt="لعبة PC 030">
+                        <h3>لعبة PC 030</h3>
+                        <div class="price-info"><p>السعر: 380.00 ريال</p></div>
+                        <div class="platform-info"><p>المنصة: Epic Games</p></div>
+                        <button class="btn-primary add-to-cart-single">أضف إلى السلة</button>
+                    </div></div>
+
+                <div class="more-products-container">
+                    <button class="btn-secondary see-more-btn" data-target-category="pc-games">شاهد المزيد من ألعاب PC</button>
+                    <button class="btn-secondary see-less-btn" data-target-category="pc-games" style="display: none;">عرض أقل</button>
+                </div>
+            </div>              
+
+
+
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="product-category-section" id="digital-cards">
+                <h3>بطاقات رقمية</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-product-id="card-001" data-product-name="بطاقة بلايستيشن ستور 50 ريال" data-product-type="card" data-product-price="50.00">
+                        <img src="https://source.unsplash.com/300x300/?playstation-store-card" alt="بطاقة بلايستيشن ستور 50 ريال">
+                        <h3>بطاقة بلايستيشن ستور 50 ريال</h3>
+                        <div class="prices"><span class="price-value">50.00 ريال</span></div>
+                        <button class="btn-primary add-to-cart">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card" data-product-id="card-002" data-product-name="بطاقة اكس بوكس لايف 100 ريال" data-product-type="card" data-product-price="100.00">
+                        <img src="https://source.unsplash.com/300x300/?xbox-gift-card" alt="بطاقة اكس بوكس لايف 100 ريال">
+                        <h3>بطاقة اكس بوكس لايف 100 ريال</h3>
+                        <div class="prices"><span class="price-value">100.00 ريال</span></div>
+                        <button class="btn-primary add-to-cart">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card" data-product-id="card-003" data-product-name="بطاقة ستيم 50 دولار" data-product-type="card" data-product-price="187.50">
+                        <img src="https://source.unsplash.com/300x300/?steam-gift-card" alt="بطاقة ستيم 50 دولار">
+                        <h3>بطاقة ستيم 50 دولار</h3>
+                        <div class="prices"><span class="price-value">187.50 ريال</span></div>
+                        <button class="btn-primary add-to-cart">أضف إلى السلة</button>
+                    </div>
+
+                    <div class="product-card more-product-item" data-product-id="card-004" data-product-name="بطاقة رقمية 004" data-product-type="card" data-product-price="75.00">
+                        <img src="https://source.unsplash.com/300x300/?gaming-card-4" alt="بطاقة رقمية 004">
+                        <h3>بطاقة رقمية 004</h3>
+                        <div class="prices"><span class="price-value">75.00 ريال</span></div>
+                        <button class="btn-primary add-to-cart">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card more-product-item" data-product-id="card-010" data-product-name="بطاقة رقمية 010" data-product-type="card" data-product-price="200.00">
+                        <img src="https://source.unsplash.com/300x300/?gaming-card-10" alt="بطاقة رقمية 010">
+                        <h3>بطاقة رقمية 010</h3>
+                        <div class="prices"><span class="price-value">200.00 ريال</span></div>
+                        <button class="btn-primary add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+                <div class="more-products-container">
+                    <button class="btn-secondary see-more-btn" data-target-category="digital-cards">شاهد المزيد من البطاقات الرقمية</button>
+                    <button class="btn-secondary see-less-btn" data-target-category="digital-cards" style="display: none;">عرض أقل</button>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="product-category-section" id="ps-subscriptions">
+                <h3>اشتراكات بلايستيشن</h3>
+                <div class="products-grid">
+                    <div class="product-card game-card" data-product-id="ps-sub-001" data-product-name="اشتراك بلايستيشن بلس شهر" data-product-type="subscription">
+                        <img src="https://source.unsplash.com/300x300/?ps-plus-monthly" alt="اشتراك بلايستيشن بلس شهر">
+                        <h3>اشتراك بلايستيشن بلس شهر</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-sub-001" value="60.00" data-price-label="عادي" checked> عادي: 60.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-001" value="80.00" data-price-label="إضافي"> إضافي: 80.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-001" value="100.00" data-price-label="بريميوم"> بريميوم: 100.00 ريال</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="ps-sub-002" data-product-name="اشتراك بلايستيشن بلس 3 أشهر" data-product-type="subscription">
+                        <img src="https://source.unsplash.com/300x300/?ps-plus-3-months" alt="اشتراك بلايستيشن بلس 3 أشهر">
+                        <h3>اشتراك بلايستيشن بلس 3 أشهر</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-sub-002" value="150.00" data-price-label="عادي" checked> عادي: 150.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-002" value="200.00" data-price-label="إضافي"> إضافي: 200.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-002" value="250.00" data-price-label="بريميوم"> بريميوم: 250.00 ريال</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="ps-sub-003" data-product-name="اشتراك بلايستيشن بلس سنة" data-product-type="subscription">
+                        <img src="https://source.unsplash.com/300x300/?ps-plus-annual" alt="اشتراك بلايستيشن بلس سنة">
+                        <h3>اشتراك بلايستيشن بلس سنة</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-sub-003" value="350.00" data-price-label="عادي" checked> عادي: 350.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-003" value="450.00" data-price-label="إضافي"> إضافي: 450.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-003" value="550.00" data-price-label="بريميوم"> بريميوم: 550.00 ريال</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+
+                    <div class="product-card game-card more-product-item" data-product-id="ps-sub-004" data-product-name="اشتراك بلايستيشن 004" data-product-type="subscription">
+                        <img src="https://source.unsplash.com/300x300/?ps-subscription-4" alt="اشتراك بلايستيشن 004">
+                        <h3>اشتراك بلايستيشن 004</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-sub-004" value="100.00" data-price-label="عادي" checked> عادي: 100.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-004" value="130.00" data-price-label="إضافي"> إضافي: 130.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-004" value="160.00" data-price-label="بريميوم"> بريميوم: 160.00 ريال</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="ps-sub-010" data-product-name="اشتراك بلايستيشن 010" data-product-type="subscription">
+                        <img src="https://source.unsplash.com/300x300/?ps-subscription-10" alt="اشتراك بلايستيشن 010">
+                        <h3>اشتراك بلايستيشن 010</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-ps-sub-010" value="90.00" data-price-label="عادي" checked> عادي: 90.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-010" value="120.00" data-price-label="إضافي"> إضافي: 120.00 ريال</label>
+                            <label><input type="radio" name="price-ps-sub-010" value="150.00" data-price-label="بريميوم"> بريميوم: 150.00 ريال</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                </div>
+                <div class="more-products-container">
+                    <button class="btn-secondary see-more-btn" data-target-category="ps-subscriptions">شاهد المزيد من اشتراكات بلايستيشن</button>
+                    <button class="btn-secondary see-less-btn" data-target-category="ps-subscriptions" style="display: none;">عرض أقل</button>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="product-category-section" id="xbox-subscriptions">
+                <h3>اشتراكات Xbox</h3>
+                <div class="products-grid">
+                    <div class="product-card game-card" data-product-id="xbox-sub-001" data-product-name="اشتراك Xbox Game Pass Ultimate شهر" data-product-type="subscription">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/04/xbox-game-pass-ultimate.jpg" alt="اشتراك Xbox Game Pass Ultimate شهر">
+                        <h3>اشتراك Xbox Game Pass Ultimate شهر</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-sub-001" value="80.00" data-price-label="sign" checked> sign: 80.00 جنيه</label>
+                            <label><input type="radio" name="price-xbox-sub-001" value="100.00" data-price-label="Ultimate"> home: 100.00 جنيه</label>
+                            <label><input type="radio" name="price-xbox-sub-001" value="120.00" data-price-label="Ultimate + EA Play"> full: 120.00 جنيه</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="xbox-sub-002" data-product-name="اشتراك xbox core شهر" data-product-type="subscription">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/09/microsoft-reveals-full-list-of-xbox-game-pass-core-games.jpeg" alt="اشتراك Xbox Live Gold شهر">
+                        <h3>اشتراك xbox core شهر</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-sub-002" value="50.00" data-price-label="عادي" checked> عادي: 50.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-sub-002" value="70.00" data-price-label="إضافي"> إضافي: 70.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-sub-002" value="90.00" data-price-label="بريميوم"> بريميوم: 90.00 ريال</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card" data-product-id="xbox-sub-003" data-product-name="اشتراك Xbox Game Pass PC شهر" data-product-type="subscription">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/08/pc-game-pass-logo.jpg" alt="اشتراك Xbox Game Pass PC شهر">
+                        <h3>اشتراك Xbox Game Pass PC شهر</h3>
+                        
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-sub-004" data-product-name="اشتراك Xbox 004" data-product-type="subscription">
+                        <img src="https://source.unsplash.com/300x300/?xbox-subscription-4" alt="اشتراك Xbox 004">
+                        <h3>اشتراك Xbox 004</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-sub-004" value="180.00" data-price-label="عادي" checked> عادي: 180.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-sub-004" value="230.00" data-price-label="إضافي"> إضافي: 230.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-sub-004" value="280.00" data-price-label="بريميوم"> بريميوم: 280.00 ريال</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card game-card more-product-item" data-product-id="xbox-sub-010" data-product-name="اشتراك Xbox 010" data-product-type="subscription">
+                        <img src="https://source.unsplash.com/300x300/?xbox-subscription-10" alt="اشتراك Xbox 010">
+                        <h3>اشتراك Xbox 010</h3>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-xbox-sub-010" value="90.00" data-price-label="عادي" checked> عادي: 90.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-sub-010" value="110.00" data-price-label="إضافي"> إضافي: 110.00 ريال</label>
+                            <label><input type="radio" name="price-xbox-sub-010" value="130.00" data-price-label="بريميوم"> بريميوم: 130.00 ريال</label>
+                        </div>
+                        <button class="btn-primary add-to-cart-multi">أضف إلى السلة</button>
+                    </div>
+                </div>
+                <div class="more-products-container">
+                    <button class="btn-secondary see-more-btn" data-target-category="xbox-subscriptions">شاهد المزيد من اشتراكات Xbox</button>
+                    <button class="btn-secondary see-less-btn" data-target-category="xbox-subscriptions" style="display: none;">عرض أقل</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section section-padding">
+        <div class="container">
+            <h2>كيف تتم عملية الشراء؟</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="icon-circle"><i class="fas fa-search"></i></div>
+                    <h3>1. تصفح واختار</h3>
+                    <p>استعرض مجموعتنا الواسعة من الألعاب والاشتراكات.</p>
+                </div>
+                <div class="step-item">
+                    <div class="icon-circle"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>2. أضف إلى السلة</h3>
+                    <p>اختر ما يعجبك وأضفه إلى سلة التسوق الخاصة بك.</p>
+                </div>
+                <div class="step-item">
+                    <div class="icon-circle"><i class="fas fa-credit-card"></i></div>
+                    <h3>3. أكمل الدفع</h3>
+                    <p>املأ بياناتك واختر طريقة الدفع المناسبة لك.</p>
+                </div>
+                <div class="step-item">
+                    <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
+                    <h3>4. تأكيد عبر الواتساب</h3>
+                    <p>سيتم توجيهك إلى واتساب لإتمام عملية الدفع وتأكيد طلبك.</p>
+                </div>
+                <div class="step-item">
+                    <div class="icon-circle"><i class="fas fa-gamepad"></i></div>
+                    <h3>5. استمتع بمنتجك</h3>
+                    <p>بمجرد التأكيد، استلم منتجك واستمتع به على الفور!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <p class="contact-description">
+                لديك أسئلة؟ ملاحظات؟ لا تتردد في التواصل معنا وسنكون سعداء بمساعدتك!
+            </p>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@gameshop.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+201061210922</p>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <p><a href="https://wa.me/201061210922" target="_blank">تواصل عبر الواتساب</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>القاهرة، مصر</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GameShop. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <div class="overlay" id="cartOverlay">
+        <div class="cart-content">
+            <button class="close-btn" id="closeCartBtn">&times;</button>
+            <h3>سلة التسوق</h3>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart-message" style="display: none;">سلة التسوق فارغة.</p>
+                </div>
+            <div class="cart-summary">
+                <p>الإجمالي: <span id="cartTotal">0.00</span> ريال</p>
+                <button class="btn-primary" id="checkoutBtn">متابعة الدفع</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="checkoutOverlay">
+        <div class="checkout-content">
+            <button class="close-btn" id="closeCheckoutBtn">&times;</button>
+            <h3>إتمام عملية الشراء</h3>
+            <div id="checkoutSummary" class="checkout-summary">
+                </div>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="fullName">الاسم الكامل:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">رقم الهاتف:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">ملاحظات (اختياري):</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+
+                <h4>طريقة الدفع:</h4>
+                <div class="payment-methods">
+                    <label class="radio-label">
+                        <input type="radio" name="paymentMethod" value="InstaPay" checked>
+                        <span>إنستاباي (InstaPay)</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="paymentMethod" value="ElectronicWallet">
+                        <span>محافظ إلكترونية (فودافون كاش / اتصالات كاش / أورانج موني)</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="paymentMethod" value="Binance">
+                        <span>بينانس (Binance P2P / USDT ID)</span>
+                    </label>
+                </div>
+
+                <div class="checkout-total-final">
+                    <p>الإجمالي الكلي: <span id="checkoutTotal">0.00</span> ريال</p>
+                </div>
+                <button type="submit" class="btn-primary" id="placeOrderBtn">تأكيد الطلب والدفع</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <script src="script.js"></script>
+</body>
+</html>
